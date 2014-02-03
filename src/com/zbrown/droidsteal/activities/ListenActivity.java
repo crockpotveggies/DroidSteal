@@ -250,9 +250,9 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
         try {
             if (dif > (1 * 24 * 60 * 60 * 1000)) { // show once per day. (I think)
                 // Update Checker
-                String VERSION_URL = "https://raw.github.com/Zbob750/DroidSteal/master/update_version.php";
+                String VERSION_URL = "https://raw.github.com/crockpotveggies/DroidSteal/master/update_version.php";
                 String REMOTE_APK_URL = " "; // I need to figure out how I want to do this still. :(
-                int ALERT_ICON = R.drawable.droidsteal_square;
+                int ALERT_ICON = R.drawable.carrots;
                 UpdateChecker uc = new UpdateChecker(this, VERSION_URL,
                         REMOTE_APK_URL, ALERT_ICON);
                 uc.startUpdateChecker();
@@ -702,19 +702,26 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 
         int icon = R.drawable.droidsteal_notification;
         long when = System.currentTimeMillis();
-        Notification notification = new Notification(icon, getString(R.string.notification_title), when);
 
         Context context = getApplicationContext();
         Intent notificationIntent = new Intent(ListenActivity.this, ListenActivity.class);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
 
+        String notificationTitle = "DroidSteal is listening for sessions";
+
         if (persistent) {
-            notification.setLatestEventInfo(context, "DroidSteal is listening for sessions",
-                    getString(R.string.notification_text), contentIntent);
+            notificationTitle = "DroidSteal is listening for sessions";
         } else {
-            notification.setLatestEventInfo(context, getString(R.string.notification_title),
-                    getString(R.string.notification_text), contentIntent);
+            notificationTitle = getString(R.string.notification_title);
         }
+
+        Notification notification = new Notification.Builder(context)
+            .setContentTitle(notificationTitle)
+            .setContentText(getString(R.string.notification_text))
+            .setSmallIcon(icon)
+            .setContentIntent(contentIntent)
+            .build();
+
         mNotificationManager.notify(NOTIFICATION_ID, notification);
     }
 

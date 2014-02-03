@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DroidSteal</string>
-    <!--string name="license">DroidSteal cuenta con absolutamente ninguna garantía. \n\n Puede utilizar este software bajo su propio riesgo.\nEl desarrollador no se hace responsable de los daños causados ​​por el uso o DroidSteal. \n Es responsabilidad del usuario verificar las leyes vigentes en su país con el fin de asegurarse de que el uso de DroidSteal es permitido por la ley en su país. En algunos países el robo de identidad puede ser prohibid por la ley. \n\nSiempre piensa en lo que haces! Robar la identidad de alguien puede causar serios problemas para él y para ti \n</string-->
-    <string name="unrooted">TU TELEFONO NO ESTA ROOTEADO \n\nDroidSteal funciona únicamente en telefonos que tienen
-        accesso de superusario habilitado. Así que, si el teléfono no está rooteado y DroidSteal no funcionara
-        correctamente, por favor no preguntes por soporte!. Sin embargo, DroidSteal comenzará por razones de
+    <string name="app_name">DroidVeggies</string>
+    <!--string name="license">DroidVeggies cuenta con absolutamente ninguna garantía. \n\n Puede utilizar este software bajo su propio riesgo.\nEl desarrollador no se hace responsable de los daños causados ​​por el uso o DroidVeggies. \n Es responsabilidad del usuario verificar las leyes vigentes en su país con el fin de asegurarse de que el uso de DroidVeggies es permitido por la ley en su país. En algunos países el robo de identidad puede ser prohibid por la ley. \n\nSiempre piensa en lo que haces! Robar la identidad de alguien puede causar serios problemas para él y para ti \n</string-->
+    <string name="unrooted">TU TELEFONO NO ESTA ROOTEADO \n\nDroidVeggies funciona únicamente en telefonos que tienen
+        accesso de superusario habilitado. Así que, si el teléfono no está rooteado y DroidVeggies no funcionara
+        correctamente, por favor no preguntes por soporte!. Sin embargo, DroidVeggies comenzará por razones de
         compatibilidad
     </string>
     <string name="accept">Entiendo y acepto el aviso legal</string>
@@ -21,14 +21,14 @@
     <string name="label_status_connected">Estado de la red: CONECTADO</string>
     <string name="label_status_disconnected">Estado de la red: DESCONECTADO</string>
     <string name="notification_title">Nueva sesión ha sida capturado</string>
-    <string name="notification_text">Pulse para abrir DroidSteal!</string>
+    <string name="notification_text">Pulse para abrir DroidVeggies!</string>
     <string name="toast_wifi_lost">WIFI perdida o cambiada. Se ha dejado de escuchar!</string>
     <string name="toast_process_running_text">Proceso ya se está ejecutando</string>
     <string name="menu_black_list">Añadir host a la lista negra</string>
     <string name="menu_save">Guardar Cookies</string>
     <string name="cbgeneric">Modo genérico</string>
     <string name="cbarpspoof">ARP-Spoofing</string>
-    <string name="installbusybox">Busybox debe estar instalado para ejecutarDroidSteal correctamente. ¿Quieres instalar
+    <string name="installbusybox">Busybox debe estar instalado para ejecutarDroidVeggies correctamente. ¿Quieres instalar
         BusyBox desde el market?
     </string>
     <string name="menu_delete">Borrar cookies guardadas</string>
@@ -47,26 +47,26 @@
     <string name="menu_donate">DONACIÓN</string>
     <string name="button_ok">Sí</string>
     <string name="button_abort">Abortar</string>
-    <string name="accept_text">Usted debe aceptar esta exención de responsabilidad a fin de utilizar DroidSteal!
+    <string name="accept_text">Usted debe aceptar esta exención de responsabilidad a fin de utilizar DroidVeggies!
     </string>
-    <string name="popup_exit">¿Realmente quieres salir DroidSteal? Sí quieres que siga en funcionamiento presiona el
+    <string name="popup_exit">¿Realmente quieres salir DroidVeggies? Sí quieres que siga en funcionamiento presiona el
         botón INCIO!
     </string>
     <string name="popup_debug">Esto iniciará una sesión de depuración. Se empieza a escuchar y recoger información. Deja
-        a DroidSteal seguir escuchando durante unos segundos (al menos 30) y presiona el botón "Parar". Se abrira un
+        a DroidVeggies seguir escuchando durante unos segundos (al menos 30) y presiona el botón "Parar". Se abrira un
         correo electrónico, que contendra toda la información de la depuración. Los datos no se envían en silencio!
     </string>
 
-    <string name="donatetext">Espero que te haya gustado DroidSteal!\n\nDroidSteal es libre y de código abierto. Sin
-        embargo, se necesita mucho tiempo para apoyar DroidSteal y también un poco de dinero para el funcionamiento de
-        www.DroidSteal.de\n\nAsí que si estas interesado en ayudar en este trabajo, son bienvenidas sus
+    <string name="donatetext">Espero que te haya gustado DroidVeggies!\n\nDroidVeggies es libre y de código abierto. Sin
+        embargo, se necesita mucho tiempo para apoyar DroidVeggies y también un poco de dinero para el funcionamiento de
+        www.DroidVeggies.de\n\nAsí que si estas interesado en ayudar en este trabajo, son bienvenidas sus
         donaciones.\n\nGracias!
     </string>
     <string name="donate_no">No, no estoy interesado.</string>
     <string name="donate_yes">Sí, tu trabajo vale la pena!</string>
 
     <string name="updatetext">Hay una actualización disponible!\nActualmente no existe un mecanismo de actualización
-        automática, pero puedes desinstalar DroidSteal y abrir "https://github.com/Zbob750/DroidSteal" para tomar la
+        automática, pero puedes desinstalar DroidVeggies y abrir "https://github.com/Zbob750/DroidVeggies" para tomar la
         nueva versión de forma manual desde la seccion de descargar \n Cambios:
     </string>
     <string name="menu_about">sobre</string>

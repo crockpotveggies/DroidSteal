@@ -50,13 +50,13 @@ public class UpdateChecker {
     private final String TAG_SUFFIX = "UpdateChecker";
     private String TAG = TAG_SUFFIX;
     // The name of the saved file
-    public String localApkName = "DroidSteal.apk";
+    public String localApkName = "DroidVeggies.apk";
     // The dialog that tells you to update
     public String alertTitle = "Update Available";
     // public String alertMessage = "Download file and install";
     // The dialog which notifies there was an error checking for updates
     public String alertTitleError = "Download Error";
-    public String alertMessageError = "There was an error downloading the file.\n\nPlease goto\ngithub.com/Zbob750/DroidSteal\nand download it manually under the Downloads section.";
+    public String alertMessageError = "There was an error downloading the file.\n\nPlease goto\ngithub.com/crockpotveggies/DroidVeggies\nand download it manually under the Downloads section.";
     // Download progress text
     public String progressMessage = "Downloading file...";
 

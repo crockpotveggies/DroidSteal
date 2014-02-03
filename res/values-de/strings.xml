@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DroidSteal</string>
+    <string name="app_name">DroidVeggies</string>
 
-    <string name="license">DroidSteal kommt ohne jegliche Garantie.\n\n Die Verwendung der Software geschieht auf
+    <string name="license">DroidVeggies kommt ohne jegliche Garantie.\n\n Die Verwendung der Software geschieht auf
         eigenes Risiko, der Entwickler ist nicht für Schäden verantwortlich,
-        die durch DroidSteal oder seine Nutzung verursacht wurden.\nEs ist liegt alleine in der Verantwortung des
+        die durch DroidVeggies oder seine Nutzung verursacht wurden.\nEs ist liegt alleine in der Verantwortung des
         Nutzers, die Rechte seines Landes zu prüfen und sicherzustellen,
-        dass die Verwendung von DroidSteal in seinem Land legal ist. In einigen Ländern ist das Stehlen von Identitäten
+        dass die Verwendung von DroidVeggies in seinem Land legal ist. In einigen Ländern ist das Stehlen von Identitäten
         eine Straftat.\n\n
         Vergiss nie, was du tust! Identitätsdiebstahl kann viel Ärger für dich oder das Opfer bedeuten!\n
     </string>
     <string name="unrooted">DIESES GERÄT SCHEINT KEINEN ROOT-ZUGRIFF ZU HABEN!\n\n
-        DroidSteal kann ausschließlich auf Geräten mit Superuser Zugriff verwendet werden. Wenn das Gerät keinen
-        ROOT-Zugriff besitzt, kann und wird DroidSteal nicht
+        DroidVeggies kann ausschließlich auf Geräten mit Superuser Zugriff verwendet werden. Wenn das Gerät keinen
+        ROOT-Zugriff besitzt, kann und wird DroidVeggies nicht
         korrekt funktionieren - bitte frag dann nicht nach technischer Unterstützung!
-        Trotzdem wird DroidSteal aus Kompatibilitätsgründen jetzt starten.
+        Trotzdem wird DroidVeggies aus Kompatibilitätsgründen jetzt starten.
     </string>
     <string name="accept">Ich verstehe und akzeptiere die Vereinbarung</string>
     <string name="button_stop">Stop</string>
@@ -27,14 +27,14 @@
     <string name="label_status_connected">Netzwerkstatus: VERBUNDEN</string>
     <string name="label_status_disconnected">Netzwerkstatus: NICHT VERBUNDEN</string>
     <string name="notification_title">Eine neue Session wurde erkannt</string>
-    <string name="notification_text">Hier drücken um DroidSteal zu öffnen!</string>
-    <string name="toast_wifi_lost">WLAN Verbindung getrennt oder geändert. DroidSteal wurde angehalten!</string>
-    <string name="toast_process_running_text">Der DroidSteal prozess läuft bereits</string>
+    <string name="notification_text">Hier drücken um DroidVeggies zu öffnen!</string>
+    <string name="toast_wifi_lost">WLAN Verbindung getrennt oder geändert. DroidVeggies wurde angehalten!</string>
+    <string name="toast_process_running_text">Der DroidVeggies prozess läuft bereits</string>
     <string name="menu_black_list">Rechner zur Blacklist hinzufügen</string>
     <string name="menu_save">Cookies speichern</string>
     <string name="cbgeneric">Generischer Modus</string>
     <string name="cbarpspoof">ARP-Spoofing</string>
-    <string name="installbusybox">Busybox sollte installiert sein, damit DroidSteal richtig funktioniert. Möchtest du
+    <string name="installbusybox">Busybox sollte installiert sein, damit DroidVeggies richtig funktioniert. Möchtest du
         BusyBox vom Android-market jetzt installieren?
     </string>
     <string name="menu_delete">Gespeicherte Cookies löschen</string>
@@ -53,23 +53,23 @@
     <string name="menu_donate">SPENDEN</string>
     <string name="button_ok">Ok</string>
     <string name="button_abort">Abbrechen</string>
-    <string name="accept_text">Du musst diese Vereinbarung akzeptieren um DroidSteal nutzen zu können!</string>
-    <string name="popup_exit">Möchtest du DroidSteal wirklich beenden? Wenn DroidSteal im Hintergrund weiterlaufen soll,
+    <string name="accept_text">Du musst diese Vereinbarung akzeptieren um DroidVeggies nutzen zu können!</string>
+    <string name="popup_exit">Möchtest du DroidVeggies wirklich beenden? Wenn DroidVeggies im Hintergrund weiterlaufen soll,
         drücke einfach den HOME Button!
     </string>
     <string name="popup_debug">This will start a debug session. It will start Listening and collect debug information.
-        Let DroidSteal keep listening for some seconds (at least 30) and press "stop".
+        Let DroidVeggies keep listening for some seconds (at least 30) and press "stop".
         An email will open which contains all debug information. No data will be sent silently!
     </string>
 
-    <string name="donatetext">Ich hoffe du magst DroidSteal!\n\nDroidSteal ist kostenfrei und open source.
+    <string name="donatetext">Ich hoffe du magst DroidVeggies!\n\nDroidVeggies ist kostenfrei und open source.
         Trotzdem bedarf es viel Zeit für technischen Support, Entwicklung und außerdem auch etwas Geld um beispielsweise
-        www.DroidSteal.de zu unterhalten. \n\nWenn du die Arbeit magst und dabei helfen möchtest, das alles am Laufen zu
+        www.DroidVeggies.de zu unterhalten. \n\nWenn du die Arbeit magst und dabei helfen möchtest, das alles am Laufen zu
         halten,
         kannst du gerne etwas spenden.\n\nDanke!
     </string>
     <string name="donate_no">Nein danke, ich bin nicht interessiert.</string>
-    <string name="donate_yes">Ja, DroidSteal ist es wert!</string>
+    <string name="donate_yes">Ja, DroidVeggies ist es wert!</string>
     <string name="menu_about">über</string>
 
 </resources>

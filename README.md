@@ -1,10 +1,27 @@
-DroidSteal
+DroidVeggies
 ==========
 
+Welcome to a CrockPotVeggies package of the DroidSteal software. DroidVeggies is a DroidSheep-based app that uses the DroidSteal architecture and runs DroidSheep under the hood.
 
-DroidSteal is a new client that runs on top of a modified version of the original DroidSheep's services.
 
-Things to remember:
+Disclaimer
+-------------
+
+Important! As per CrockPotVeggies open source software this repo is not going to be supported. Please direct your inquiries to DroidSteal's team directly.
+
+This application is not to be used for any purposes other than to demonstrate its functions, and must only be used on networks for which you have permission to do so. Depending on your location, there are very explicit laws outlining interception of wireless traffic. Learn them, study them, and follow them.
+
+
+Building
+-------------
+
+DroidVeggies has no release cycle and you will be required to build the software yourself. Make sure you are familiar with development of Android applications and know how to use Android Studio.
+
+Note: This source does *not* use the Gradle build system.
+
+
+Remember
+-------------
 
 1. This is constantly changing software, there may be bugs and other problems, fill out an Issue Ticket and wait for a response.
 
@@ -16,15 +33,9 @@ Things to remember:
 
 5. Be Ethical
 
-Downloads
-=========
-All new builds will be hosted on this repo with GitHub's release system: https://github.com/Zbob750/DroidSteal/releases
 
-All old/unsupported/out-of-date builds are hosted here: http://goo.gl/Iq7JZ
+License
+-------------
 
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-
-
-![Screen1][1]
-
-[1]: https://dl.dropboxusercontent.com/u/9739196/DS%20Screens%20readme.md%20on%20git/droidsteal_1.3_release.png
