@@ -1,4 +1,4 @@
-DroidVeggies
+![Fresh Carrots](https://raw.github.com/crockpotveggies/DroidVeggies/master/res/drawable-hdpi/launcherico.png) DroidVeggies
 ==========
 
 Welcome to a CrockPotVeggies package of the DroidSteal software. DroidVeggies is a DroidSheep-based app that uses the DroidSteal architecture and runs DroidSheep under the hood.
