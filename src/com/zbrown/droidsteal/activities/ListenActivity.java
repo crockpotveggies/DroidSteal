@@ -67,7 +67,6 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
     public static List<Auth> authList = Collections.synchronizedList(authListUnsynchronized);
 
     private SessionListView sessionListView;
-    private TextView tstatus;
     private TextView tnetworkName;
     private ProgressBar pbrunning;
     private CheckBox cbgeneric;
@@ -120,7 +119,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
                     authList.add(pos, a);
                 }
                 ListenActivity.this.refresh();
-                ListenActivity.this.notifyUser(false);
+                ListenActivity.this.notifyUser(false, a);
             } else if (type != null && type.equals(BUNDLE_TYPE_LOADAUTH)) {
                 Serializable serializable = msg.getData().getSerializable(BUNDLE_KEY_AUTH);
                 if (serializable == null || !(serializable instanceof Auth)) {
@@ -132,7 +131,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
                     ListenActivity.authList.add(0, a);
                 }
                 ListenActivity.this.refresh();
-                ListenActivity.this.notifyUser(false);
+                ListenActivity.this.notifyUser(false, a);
             } else if (type != null && type.equals(BUNDLE_TYPE_START)) {
                 Button button = (Button) findViewById(R.id.bstartstop);
                 button.setEnabled(false);
@@ -148,7 +147,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
                         stopSpoofing();
                     }
                     startListening();
-                    notifyUser(true);
+                    notifyUser(true, null);
                     refreshHandler.sleep();
                 }
                 button.setEnabled(true);
@@ -226,7 +225,6 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
         } else {
             button.setText(getString(R.string.button_start));
         }
-        tstatus = (TextView) findViewById(R.id.status);
         tnetworkName = (TextView) findViewById(R.id.networkname);
         pbrunning = (ProgressBar) findViewById(R.id.progressBar1);
         cbgeneric = (CheckBox) findViewById(R.id.cbgeneric);
@@ -614,10 +612,8 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
     }
 
     private void cleanup() {
-        tstatus.setText(getString(R.string.label_not_running));
-        tstatus.setTextColor(Color.BLACK);
-        pbrunning.setVisibility(View.INVISIBLE);
         Button button = ((Button) findViewById(R.id.bstartstop));
+        pbrunning.setVisibility(View.INVISIBLE);
         button.setText("Start");
         stopSpoofing();
         stopListening();
@@ -648,28 +644,21 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
     }
 
     public void refreshStatus() {
+        Button button = ((Button) findViewById(R.id.bstartstop));
         boolean listening = isListening();
         boolean spoofing = isSpoofing();
 
         if (listening && !spoofing) {
-            tstatus.setText(getString(R.string.label_running));
-            tstatus.setTextColor(Color.DKGRAY);
-            tstatus.setTextSize(15);
+            button.setText(getString(R.string.label_running));
             pbrunning.setVisibility(View.VISIBLE);
         } else if (listening) {
-            tstatus.setText(getString(R.string.label_running_and_spoofing));
-            tstatus.setTextColor(Color.GREEN);
-            tstatus.setTextSize(15);
+            button.setText(getString(R.string.label_running_and_spoofing));
             pbrunning.setVisibility(View.VISIBLE);
         } else if (spoofing) {
-            tstatus.setText(getString(R.string.label_not_running_and_spoofing));
-            tstatus.setTextColor(Color.RED); //This shouldn't occur usually
-            tstatus.setTextSize(15);
+            button.setText(getString(R.string.label_not_running_and_spoofing));
             pbrunning.setVisibility(View.VISIBLE);
         } else {
-            tstatus.setText(getString(R.string.label_not_running));
-            tstatus.setTextColor(Color.DKGRAY);
-            tstatus.setTextSize(15);
+            button.setText(getString(R.string.label_not_running));
             pbrunning.setVisibility(View.INVISIBLE);
         }
 
@@ -695,7 +684,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
         }
     }
 
-    private void notifyUser(boolean persistent) {
+    private void notifyUser(boolean persistent, Auth auth) {
         if (lastNotification >= authList.size())
             return;
         lastNotification = authList.size();
@@ -708,6 +697,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
 
         String notificationTitle = "DroidSteal is listening for sessions";
+        String notificationText = auth != null ? auth.getUrl() : getString(R.string.notification_text);
 
         if (persistent) {
             notificationTitle = "DroidSteal is listening for sessions";
@@ -717,7 +707,7 @@ public class ListenActivity extends Activity implements OnClickListener, OnItemC
 
         Notification notification = new Notification.Builder(context)
             .setContentTitle(notificationTitle)
-            .setContentText(getString(R.string.notification_text))
+            .setContentText(notificationText)
             .setSmallIcon(icon)
             .setContentIntent(contentIntent)
             .build();

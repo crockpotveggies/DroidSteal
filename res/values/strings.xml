@@ -15,15 +15,15 @@
     <string name="accept">I understand and accept the disclaimer</string>
     <string name="button_stop">Stop</string>
     <string name="button_start">Start</string>
-    <string name="label_running">RUNNING</string>
-    <string name="label_running_and_spoofing">RUNNING AND SPOOFING</string>
-    <string name="label_not_running_and_spoofing">SPOOFING ONLY</string>
-    <string name="label_not_running">IDLE</string>
+    <string name="label_running">Running</string>
+    <string name="label_running_and_spoofing">Running w/ ARP Spoof</string>
+    <string name="label_not_running_and_spoofing">ARP Active</string>
+    <string name="label_not_running">Start</string>
     <string name="label_networkname_pref">Connected to</string>
     <string name="label_status_connected">Network status: CONNECTED</string>
     <string name="label_status_disconnected">Network status: DISCONNECTED</string>
 
-    <string name="notification_title">Session Captured!</string>
+    <string name="notification_title">Session Captured</string>
     <string name="notification_text">Tap to open DroidVeggies!</string>
 
     <string name="toast_wifi_lost">Wifi connection lost or changed. Stopped Listening!</string>
