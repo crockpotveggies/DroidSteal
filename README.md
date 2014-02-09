@@ -1,13 +1,13 @@
 ![Fresh Carrots](https://raw.github.com/crockpotveggies/DroidVeggies/master/res/drawable-hdpi/launcherico.png) DroidVeggies
 ==========
 
-Welcome to a CrockPotVeggies package of the DroidSteal software. DroidVeggies is a DroidSheep-based app that uses the DroidSteal architecture and runs DroidSheep under the hood.
+Welcome to a crockpotveggies package of the DroidSteal software. DroidVeggies is a DroidSheep-based app that uses the DroidSteal architecture and runs DroidSheep under the hood.
 
 
 Disclaimer
 -------------
 
-Important! As per CrockPotVeggies open source software this repo is not going to be supported. Please direct your inquiries to DroidSteal's team directly.
+Important! As per crockpotveggies open source software this repo is not going to be supported. Please direct your inquiries to DroidSteal's team directly.
 
 This application is not to be used for any purposes other than to demonstrate its functions, and must only be used on networks for which you have permission to do so. Depending on your location, there are very explicit laws outlining interception of wireless traffic. Learn them, study them, and follow them.
 
